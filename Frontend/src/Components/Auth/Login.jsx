@@ -1,14 +1,13 @@
-import React, { useContext, useState } from 'react'
-import { Context } from '../../main';
-import { FaRegUser } from 'react-icons/fa';
-import { MdOutlineMailOutline } from 'react-icons/md';
-import { RiLock2Fill } from 'react-icons/ri';
-import toast from 'react-hot-toast';
-import axios from 'axios';
-import { Link, Navigate } from 'react-router-dom';
-import img from "../../Asset/Jobhuntamico.png"
-import img2 from "../../Asset/Screenshot__108_-removebg-preview.png"
-
+import React, { useContext, useState } from "react";
+import { Context } from "../../main";
+import { FaRegUser } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { RiLock2Fill } from "react-icons/ri";
+import toast from "react-hot-toast";
+import axios from "axios";
+import { Link, Navigate } from "react-router-dom";
+import img from "../../Asset/Jobhuntamico.png";
+import img2 from "../../Asset/Screenshot__108_-removebg-preview.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -40,12 +39,12 @@ const Login = () => {
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={"/"}/>
+  if (isAuthorized) {
+    return <Navigate to={"/"} />;
   }
   return (
     <>
-     <section className="authPage">
+      <section className="authPage">
         <div className="container">
           <div className="header">
             <img src={img2} alt="logo" />
@@ -82,7 +81,7 @@ const Login = () => {
                   type="password"
                   placeholder="Your Password"
                   value={password}
-                  autoComplete='false'
+                  autoComplete="false"
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <RiLock2Fill />
@@ -99,7 +98,7 @@ const Login = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

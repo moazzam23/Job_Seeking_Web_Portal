@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import img2 from "../../Asset/Screenshot__108_-removebg-preview.png"
+import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -55,7 +56,11 @@ const Navbar = () => {
                   : " My Application"}
               </Link>
             </li>
-
+            <li>
+                  <Link to={"/user/me"} onClick={() => setShow(false)}>
+                   <FaUserCircle style={{height:"2.5rem",width:"2.5rem"}}/>
+                  </Link>
+                </li>
             {user && user.role === "employee" ? (
               <>
                 <li>
@@ -70,6 +75,7 @@ const Navbar = () => {
                     My Jobs
                   </Link>
                 </li>
+                
               </>
             ) : (
               <></>
