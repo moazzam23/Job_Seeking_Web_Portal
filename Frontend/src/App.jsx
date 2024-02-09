@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useContext } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import { Context } from "./main";
 import Navbar from "./Components/Layout/Navbar";
@@ -45,11 +45,14 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={isAuthorized ? <Home /> : <Navigate to="/login" />}
+          />
           <Route path="/All-Jobs" element={<Jobs />} />
           <Route path="/job/me" element={<Myjob />} />
           <Route path="/create-job" element={<CreateJob />} />
-          <Route path="/job-details/:id" element={<JobDetail />} />
+          <Route path="/job/:id" element={<JobDetail />} />
           <Route path="/application/me" element={<MyApplication />} />
           <Route path="/application/:id" element={<Application />} />
           <Route path="*" element={<Notfound />} />

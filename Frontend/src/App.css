@@ -196,7 +196,7 @@ p {
 }
 
 .footerShow {
-  background: #18191c;
+  background: #92E3A9;
   display: flex;
   justify-content: space-between;
   padding: 25px 120px;
@@ -205,13 +205,15 @@ p {
 .footerShow div {
   display: flex;
   gap: 12px;
-  font-size: 16px;
-  color: #f1f3f6;
+  font-size: 19px;
+  font-weight: 800;
+  color: black;
+
 }
 .footerShow div a {
   font-size: 20px;
   text-decoration: none;
-  color: #f1f3f6;
+  color: black;
 }
 .footerShow div a:hover {
   color: #2d5649;
@@ -240,7 +242,7 @@ p {
 .heroSection {
   display: flex;
   flex-direction: column;
-  padding: 75px 0 50px 0;
+  padding: 45px 0 30px 0;
 }
 .heroSection .container,
 .heroSection .details {
@@ -268,6 +270,7 @@ p {
 .heroSection .container .title p {
   margin-top: 1.5rem;
   max-width: 600px;
+  font-weight: 800;
 }
 .heroSection .container .image {
   overflow: hidden;
@@ -279,24 +282,25 @@ p {
 .heroSection .details {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 .heroSection .details .card {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
-  background: #f1f3f6;
+  background: #92E3A9;
   width: 220px;
-  padding: 10px 20px;
+  border-radius: 15px;
+  padding: 20px 20px;
 }
 .heroSection .details .card .icon {
   font-size: 24px;
-  background: rgb(233, 249, 255);
+  background: #92E3A9;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color: #2d5649;
+  color: black;
 }
 .heroSection .details .card .content p:first-child {
   font-weight: bold;
@@ -304,6 +308,7 @@ p {
 .heroSection .details .card .content p:nth-child(2) {
   font-size: 14px;
   color: gray;
+  font-weight: 800;
   margin-top: 5px;
 }
 .heroSection .details .card:hover {
@@ -390,22 +395,24 @@ p {
   flex-direction: column;
   align-items: center;
   flex: 1;
+  font-weight: 800;
   height: 350px;
   padding: 30px 50px;
   gap: 12px;
   justify-content: center;
 }
 .howitworks .container .banner .card:nth-child(2) {
-  background: #18191c;
-  color: #fff;
+  background: #92E3A9;
+  color: black;
+  font-weight: 800;
 }
 .howitworks .container .banner .card svg {
   font-size: 30px;
-  color: #2d5649;
+  color: #06241a;
 }
 .howitworks .container .banner .card p:last-child {
   font-size: 14px;
-  color: gray;
+  color: black;
 }
 @media (max-width: 1520px) {
   .howitworks .container {
@@ -445,6 +452,7 @@ p {
   justify-content: space-between;
   gap: 35px;
   padding: 20px 0;
+  
 }
 .categories .banner .card {
   width: 320px;
@@ -453,7 +461,7 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f1f3f6;
+  background: #92E3A9;
 }
 .categories .banner .card:hover {
   transition: all 0.3s;
@@ -462,10 +470,10 @@ p {
   -moz-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
 }
 .categories .banner .card .icon {
-  font-size: 24px;
+  font-size: 34px;
   padding: 10px;
-  background: rgb(233, 249, 255);
-  color: #2d5649;
+  background:#92E3A9;
+  color: #051a13;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,7 +485,7 @@ p {
 .categories .banner .card .text p:nth-child(2) {
   font-size: 14px;
   font-weight: 300;
-  color: gray;
+  color: rgb(7, 32, 2);
 }
 @media (max-width: 1520px) {
   .categories {
@@ -540,8 +548,8 @@ p {
 .companies .container .banner .card .content .icon {
   padding: 10px;
   font-size: 24px;
-  color: #2d5649;
-  background: rgb(233, 249, 255);
+  color: #041f16;
+  background: #92E3A9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,8 +563,8 @@ p {
   color: gray;
 }
 .companies .container .banner .card button {
-  color: #2d5649;
-  background: rgb(233, 249, 255);
+  color: #010a07;
+  background: #92E3A9;
   font-weight: bold;
   font-size: 20px;
   border: none;
@@ -1149,7 +1157,7 @@ p {
   }
 }
 nav {
-  background: #18191c;
+  background: #92E3A9;
   padding: 0 20px;
 }
 nav .container {
@@ -1161,6 +1169,8 @@ nav .container {
 }
 nav .container .logo {
   width: 120px;
+  background-color: #f1f3f6;
+  border-radius: 100%;
   height: 120px;
 }
 nav .container .logo img {
