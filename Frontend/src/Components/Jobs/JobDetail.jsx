@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { Context } from '../../main';
-import img from "../../Asset/Job offers-bro.png"
 
 const JobDetail = () => {
   const { id } = useParams();
